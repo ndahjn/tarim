@@ -13,16 +13,64 @@ h1, h2 {
 }
 
 #home {
-    background-image: url('image/MenariBersama.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image/MenariBersama.jpg');
     background-size: cover;
-    background-position: cover;
-    height: 500px;
-    width: auto;
-    color: rgb(255, 255, 255);
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+#home h1, #home p {
+    text-shadow: 2px 2px 8px rgba(10, 10, 10, 0.5); /* Bayangan hitam dengan sedikit blur */
 }
 
 #tarian {
     background-color: #f8f9fa;
+}
+
+#sejarah {
+    margin-top: 50px;
+}
+
+#sejarah h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.sejarah-tarian .row {
+    margin-bottom: 40px; /* Jarak antar cerita sejarah */
+}
+
+.sejarah-tarian h4 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333; /* Warna teks heading */
+}
+
+.sejarah-tarian p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555; /* Warna teks artikel */
+}
+
+.sejarah-tarian img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .sejarah-tarian .row {
+        flex-direction: column-reverse; /* Tampilkan gambar di bawah teks untuk layar kecil */
+    }
 }
 
 .card img {
